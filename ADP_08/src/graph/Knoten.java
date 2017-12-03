@@ -26,4 +26,9 @@ public class Knoten {
 	{
 		return _data;
 	}
+	
+	public Knoten[] getNeigh()
+	{
+		return _neigh;
+	}
 }

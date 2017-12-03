@@ -8,6 +8,8 @@ class GraphTest {
 
 	@Test
 	void test() {
+		Graph graph = new Adjazenzmatrix();
+		graph.allNeigh(new Pos());
 	}
 
 }

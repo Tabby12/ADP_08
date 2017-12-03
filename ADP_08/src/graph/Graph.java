@@ -2,7 +2,7 @@ package graph;
 
 public abstract class Graph {
 	
-	private Object[] _arr;
+	protected Object[] _arr;
 	private int _size;
 
 	public Graph()
@@ -28,8 +28,10 @@ public abstract class Graph {
 			_arr = arr;
 		}
 		_arr[_size++] = obj;
-		return new Pos();
+		return getPos(_size-1);
 	}
+	
+	protected abstract Pos getPos(int index);
 	
 	/**
 	 * Gibt alle Nachbarn einer Positon auf der Konsole aus
